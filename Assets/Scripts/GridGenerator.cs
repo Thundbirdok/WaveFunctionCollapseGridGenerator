@@ -4,6 +4,8 @@ using UnityEngine;
 
 public static class GridGenerator
 {
+   //TODO: Использовать SO вместо этого. Переделать пересечения. По идее нужно перерасчитывать все пересечения с вероятностями в клетках 
+   //Может быть вычитать с пропорциональным увеличением вероятности до 1, потом сложить все вероятности и разделить на количество задействованых соседей 
    private static readonly TileTypes[][] Rules =
    {
       new[] { TileTypes.Camp, TileTypes.Field, TileTypes.SmallForest, TileTypes.BigForest, TileTypes.SmallMountain, TileTypes.BigMountain, TileTypes.Water }, //Empty
